@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -15,7 +15,7 @@ jobs:
     steps:
       - run: bash <(curl -s -L https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/wss_agent.sh) -apiKey a882a356-ba8e-45bf-a986-14dae877e437 -project chen -d ~/
 workflows:
-  version: 2
+  version: 2.1
   build_and_test:
     jobs:
       - build
